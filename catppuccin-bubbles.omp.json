@@ -5,7 +5,6 @@
     "mauve": "#cba6f7",
     "sapphire": "#74c7ec",
     "lavender": "#b4befe",
-    "text": "#cdd6f4",
     "sky": "#89dceb",
     "surface": "#313244"
   },
@@ -22,7 +21,7 @@
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4",
           "template": "{{ if eq .Path \"~\" }}\udb84\udcb5{{ else if or (contains \"developer\" .Path) (contains \"Developer\" .Path) }}\udb84\udcea {{ else if or (contains \"downloads\" .Path) (contains \"Downloads\" .Path) }}\udb80\ude4d {{ else if or (contains \"docs\" .Path) (contains \"Docs\" .Path) (contains \"documents\" .Path) (contains \"Documents\" .Path) }}\udb83\udc82 {{ else if or (contains \"key\" .Path) (contains \"keys\" .Path) (contains \"Key\" .Path) (contains \"Keys\" .Path) }}\udb82\udcac {{ else if or (contains \"dev\" .Path) (contains \"Dev\" .Path) }}\udb84\udcea{{ else if or (contains \"music\" .Path) (contains \"Music\" .Path) }}\udb84\udf59{{ else if or (contains \"songs\" .Path) (contains \"Songs\" .Path) }}\udb84\udf59{{ else if or (contains \"users\" .Path) (contains \"Users\" .Path) }}\udb80\ude4c{{ else if eq .Path \"/\" }}\udb84\udc7d{{ else if or (contains \"pictures\" .Path) (contains \"Pictures\" .Path) }}\udb80\ude4f{{ else if or (contains \"pics\" .Path) (contains \"Pics\" .Path) }}\udb80\ude4f{{ else if or (contains \"photos\" .Path) (contains \"Photos\" .Path) }}\udb80\ude4f{{ else if or (contains \"images\" .Path) (contains \"Images\" .Path) }}\udb80\ude4f{{ else }}\udb84\udcea{{ end }} {{ .Path }}",
-          "foreground": "p:blue",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "type": "path",
           "style": "diamond"
@@ -38,21 +37,21 @@
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
           "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "type": "git",
           "style": "diamond",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:mauve{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:mauve{{ end }}",
-            "{{ if gt .Ahead 0 }}p:mauve{{ end }}",
-            "{{ if gt .Behind 0 }}p:mauve{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:sapphire{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:sapphire{{ end }}",
+            "{{ if gt .Ahead 0 }}p:sapphire{{ end }}",
+            "{{ if gt .Behind 0 }}p:sapphire{{ end }}"
           ]
         },
         {
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "style": "diamond",
           "type": "go",
@@ -61,7 +60,7 @@
         {
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "style": "diamond",
           "type": "java",
@@ -70,7 +69,7 @@
         {
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "style": "diamond",
           "type": "lua",
@@ -79,7 +78,7 @@
         {
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "style": "diamond",
           "type": "node",
@@ -88,7 +87,7 @@
         {
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "style": "diamond",
           "type": "lua",
@@ -97,7 +96,7 @@
         {
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "style": "diamond",
           "type": "python",
@@ -106,7 +105,7 @@
         {
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
-          "foreground": "p:mauve",
+          "foreground": "p:sapphire",
           "background": "p:surface",
           "style": "diamond",
           "type": "rust",
@@ -116,7 +115,7 @@
           "leading_diamond": " \ue0b6",
           "trailing_diamond": "\ue0b4",
           "template": "\ue266 {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB MEM:{{ sub .PhysicalPercentUsed .Precision}}%",
-          "foreground": "p:sapphire",
+          "foreground": "p:lavender",
           "background": "p:surface",
           "properties": {
             "cache_duration": "none",
