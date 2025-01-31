@@ -9,12 +9,12 @@ An Oh My Posh theme inspired by the [Catppuccin](https://catppuccin.com) color p
 ## Features
 
 - Soft, pastel colors from the Catppuccin palette
-- Bubble-style omp theme
+- Bubbles inspired omp theme
 - Git status information
 - Current directory path
 - Execution time for commands
 - Battery status for laptops
-- Faces to substitute username on line 174
+- [LennyFaces](https://www.lennyfac.es/) to substitute username on line 174
 
 ## Prerequisites
 
@@ -24,10 +24,12 @@ An Oh My Posh theme inspired by the [Catppuccin](https://catppuccin.com) color p
 
 ## Installation
 
-Windows:
-mkdir -p ~/.poshthemes
-wget <https://raw.githubusercontent.com/>
+### Windows
 
-MacOS/Linux:
-brew install jandedobbeleer/oh-my-posh/oh-my-posh
-brew update && brew upgrade && exec zsh
+- mkdir -p ~/.poshthemes
+- wget <https://raw.githubusercontent.com/>
+
+### MacOS/Linux
+
+- brew install jandedobbeleer/oh-my-posh/oh-my-posh
+- brew update && brew upgrade && exec zsh
