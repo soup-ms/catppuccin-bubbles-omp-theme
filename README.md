@@ -24,11 +24,6 @@ An Oh My Posh theme inspired by the [Catppuccin](https://catppuccin.com) color p
 
 ## Installation
 
-### Windows
-
-- mkdir -p ~/.poshthemes
-- wget <https://raw.githubusercontent.com/>
-
 ### MacOS/Linux
 
 - brew install jandedobbeleer/oh-my-posh/oh-my-posh
